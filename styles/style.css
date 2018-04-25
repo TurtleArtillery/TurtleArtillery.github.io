@@ -1,0 +1,191 @@
+
+html{
+    background-color: #00A8E1;
+    font-family: 'Quicksand', sans-serif;
+    color: #CCCCCC;
+}
+
+body{
+    margin:0;
+}
+
+.headerBar{
+    background-color: #E0E0E0;
+    color: #00A8E1;
+    margin-left: 50px;
+    margin-right: 0px;
+    box-shadow: 2px 2px 4px #373737;
+}
+
+.mainTitle{
+    font-size: 30px;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.mainTitleSub{
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 0;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.mainHeading{
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.sample1Desc{
+    margin-left: 50px;
+    width: 300px;
+    display:inline-block;
+}
+
+.circleButton{
+    display: inline-block;
+    background-color: #E0E0E0;
+    color: #00A8E1;
+    font-size: 26px;
+    padding-top:4.25px;
+    padding-bottom:6.75px;
+    padding-left: 14.5px;
+    padding-right: 15.5px;
+    border-radius:35px;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-left: 30px;
+    transition: .5s;
+}
+.circleButton:hover{
+    box-shadow: 2px 2px 20px #333333;
+}
+.circleButton2{
+    display: inline-block;
+    background-color: #E0E0E0;
+    color: #00A8E1;
+    font-size: 26px;
+    padding-top:4.25px;
+    padding-bottom:6.75px;
+    padding-left: 14px;
+    padding-right: 15px;
+    border-radius:35px;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-left: 30px;
+    transition: .5s;
+}
+.circleButton2:hover{
+    transform: rotate(180deg);
+}
+.circleButton3{
+    display: inline-block;
+    background-color: #E0E0E0;
+    color: #00A8E1;
+    font-size: 26px;
+    padding-top:4.25px;
+    padding-bottom:6.75px;
+    /*padding-left: 14.5px;
+    padding-right: 15.5px;*/
+    border-radius:35px;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-left: 30px;
+    width: 44px;
+    transition: 1s;
+    text-align: center;
+}
+.circleButton3:hover{
+    width: 255px;
+}
+.circleButton4{
+    display: inline-block;
+    background-color: #E0E0E0;
+    color: #00A8E1;
+    font-size: 26px;
+    padding-top:4.25px;
+    padding-bottom:6.75px;
+    padding-left: 14px;
+    padding-right: 15px;
+    border-radius:35px;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-left: 30px;
+    /*transition: .5s;*/
+    position: relative;
+    z-index: 5;
+}
+.circleButton4:hover{
+    /*transform: rotate(180deg);*/
+}
+
+.sample2Desc{
+    margin-left: 50px;
+    width: 300px;
+    display:inline-block;
+}
+
+.textField{
+    display:inline-block;
+    vertical-align: middle;
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    /*width: 360px;*/
+    box-shadow: 2px 2px 5px #464646AB;
+}
+
+.inputField{
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    height: 20px;
+    margin-left: 10px;
+    background-color:transparent;
+    z-index: 100;
+    width: 250px;
+    position: relative;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display:inline-block;
+}
+.inputField:focus{
+    outline: none;
+}
+
+.textFieldName{
+    display: inline-block;
+    color: #232323;
+    position: relative;
+    left:-300px;
+    z-index: 2;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    margin-right:0;
+    font-weight: 100;
+}
+
+.sample3{
+    margin-top:20px;
+}
+.sample3Desc{
+    margin-left: 50px;
+    width: 300px;
+    display:inline-block;
+}
+
+.checkBox{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    background-color: rgb(255,255,255);
+    margin-left: 30px;
+    border-radius: 10px;
+    position: relative;
+}
