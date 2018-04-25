@@ -2,7 +2,7 @@
 html{
     background-color: #00A8E1;
     font-family: 'Quicksand', sans-serif;
-    color: #CCCCCC;
+    color: #FFFFFF;
 }
 
 body{
@@ -22,6 +22,7 @@ body{
     margin-bottom: 0;
     padding-top: 20px;
     padding-left: 30px;
+    font-weight: 900;
 }
 
 .mainTitleSub{
