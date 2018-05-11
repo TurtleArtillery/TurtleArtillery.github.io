@@ -137,9 +137,9 @@ function textScale()
     }
 }
 
-
+/*
 //Checkbox Elements
-var chkbox=document.querySelector(".checkBox");
+var chkbox=document.querySelector(".chkBox");
 chkbox.style.width="32px";
 chkbox.style.height="32px";
 chkbox.style.backgroundColor="rgb(255,255,255)";
@@ -158,9 +158,9 @@ var a;
 chkbox.onclick=function(){
     endSwitch=false;
     upSwitch=true;
-    chkid=setInterval(chkPulse,4);
+    chkid=setInterval(chkPulse2,4);
 };
-function chkPulse()
+function chkPulse2()
 {
     
     if(endSwitch)
@@ -212,3 +212,4 @@ function chkPulse()
     }
     count++;
 }
+*/
