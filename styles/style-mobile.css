@@ -1,24 +1,26 @@
-
 html{
     background-color: #00A8E1;
     font-family: 'Quicksand', sans-serif;
     color: #FFFFFF;
-}
-
-body{
+    text-align: center;
     margin:0;
 }
 
-a{
-    color:none;
+body{
+    display:inline-block;
+    font-size: 14px;
+    margin: 0px;
+    width:320px;
+    border: 1px solid #0086B6;
 }
 
 .headerBar{
     background-color: #FFFFFF;
     color: #00A8E1;
-    margin-left: 50px;
+    margin-left: 10%;
     margin-right: 0px;
     box-shadow: 2px 2px 4px #373737;
+    text-align: left;
 }
 
 .mainTitle{
@@ -38,31 +40,38 @@ a{
 }
 
 .mainHeading{
-    margin-left: 50px;
-    font-size: 30px;
+    margin-top: 10%;
     font-weight: 100;
+    font-size: 14px;
 }
 
 .sample1Desc{
-    margin-left: 50px;
-    width: 300px;
+    width: 80%;
     display:inline-block;
+    font-size: 14px;
+    margin-bottom:10%;
 }
 
 .circleButton{
     display: inline-block;
     background-color: #FFFFFF;
+    line-height: 3.5vw;
+    /*letter-spacing: .5vw;*/
     color: #00A8E1;
-    font-size: 26px;
-    padding-top:4.25px;
-    padding-bottom:6.75px;
-    padding-left: 14.5px;
-    padding-right: 15.5px;
-    border-radius:35px;
+    font-size: 3vw;
+    /*padding-top:2vw;
+    padding-bottom:2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;*/
+    border-radius:10vw;
     vertical-align: middle;
+    text-align: center;
     margin-top: 0;
     margin-left: 30px;
     transition: .5s;
+    width:4vw;
+    height:4vw;
+    position:relative;
 }
 .circleButton:hover{
     box-shadow: 2px 2px 20px #333333;
@@ -70,17 +79,24 @@ a{
 .circleButton2{
     display: inline-block;
     background-color: #FFFFFF;
+    line-height: 3.6vw;
+    /*letter-spacing: .5vw;*/
     color: #00A8E1;
-    font-size: 26px;
-    padding-top:4.25px;
-    padding-bottom:6.75px;
-    padding-left: 14px;
-    padding-right: 15px;
-    border-radius:35px;
+    font-size: 3vw;
+    /*padding-top:2vw;
+    padding-bottom:2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;*/
+    border-radius:10vw;
     vertical-align: middle;
+    text-align: center;
     margin-top: 0;
     margin-left: 30px;
     transition: .5s;
+    width:4vw;
+    height:4vw;
+    position:relative;
+    transform-origin: center;
 }
 .circleButton2:hover{
     transform: rotate(180deg);
@@ -145,18 +161,17 @@ a{
 .inputField{
     border: none;
     font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     height: 20px;
     margin-left: 10px;
     background-color:transparent;
     z-index: 100;
     width: 250px;
     position: relative;
-    margin-top: 14px;
-    margin-bottom: 12px;
+    margin-top: 16px;
+    margin-bottom: 10px;
     margin-right: 10px;
     display:inline-block;
-    padding-bottom: 3px;
 }
 .inputField:focus{
     outline: none;
@@ -194,14 +209,4 @@ a{
     margin-left: 30px;
     border-radius: 10px;
     position: relative;
-}
-
-.mobileLink{
-    margin-left: 50px;
-    font-weight: 100;
-}
-
-.mobileLinkText{
-    font-weight: bold;
-    color:white;
 }
