@@ -10,7 +10,6 @@ body{
     display:inline-block;
     font-size: 14px;
     margin: 0px;
-    width:320px;
     border: 1px solid #0086B6;
 }
 
@@ -24,32 +23,35 @@ body{
 }
 
 .mainTitle{
-    font-size: 30px;
+    font-size: 10vw;
     margin-bottom: 0;
-    padding-top: 20px;
-    padding-left: 30px;
+    padding-top: 7vw;
+    padding-left: 10vw;
     font-weight: 900;
 }
 
 .mainTitleSub{
     font-weight: 100;
-    font-size: 20px;
+    font-size: 7vw;
     margin-top: 0;
-    padding-bottom: 20px;
-    padding-left: 30px;
+    padding-bottom: 7vw;
+    padding-left: 10vw;
 }
 
 .mainHeading{
-    margin-top: 10%;
+    margin-top: 5vw;
     font-weight: 100;
-    font-size: 14px;
+    font-size: 5vw;
+    width:90vw;
+    display:inline-block;
 }
 
 .sample1Desc{
-    width: 80%;
+    width: 80vw;
     display:inline-block;
-    font-size: 14px;
-    margin-bottom:10%;
+    text-align: center;
+    font-size: 5vw;
+    margin-bottom:10vw;
 }
 
 .circleButton{
@@ -150,9 +152,10 @@ body{
 
 .sample2Desc{
     /*margin-left: 50px;*/
-    /*width: 300px;*/
+    width: 80vw;
     text-align: center;
-    display:inline-block;
+    font-size: 5vw;
+    /*display:inline-block;*/
 }
 
 .textField{
@@ -202,6 +205,7 @@ body{
 
 .sample3{
     margin-top:20px;
+    text-align: center;
 }
 .sample3Desc{
     text-align: center;
