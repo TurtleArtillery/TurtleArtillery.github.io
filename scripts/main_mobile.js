@@ -7,14 +7,14 @@ backdrop.addEventListener("touchend",function(){this.style.backgroundColor="#000
 
 var button1=document.querySelector(".circleButton");
 button1.addEventListener("touchstart",function(){button1.toggleClass(".hover");});
-button1.addEventListener("touchend",function(){button1.className="circleButton";});
+button1.addEventListener("touchend",function(){button1.removeClass(".hover")});
 
 var button2=document.querySelector(".circleButton2");
-button2.addEventListener("touchstart",function(){button2.toggleClass("hover");});
-button2.addEventListener("touchend",function(){button2.removeClass("circleButton2");});
+button2.addEventListener("touchstart",function(){button2.toggleClass(".hover");});
+button2.addEventListener("touchend",function(){button2.removeClass("circleButton2");})
 
 var button3=document.querySelector(".circleButton3");
-button3.addEventListener("click",function(){button3.className="";button3.className="circleButton3"});
+button3.addEventListener("click",function(){button3.className="";});
 
 var heading=document.querySelector("h1");
 var button=document.querySelector(".circleButton4");
@@ -128,9 +128,10 @@ function myMoveReverse() {
 //TextField Elements
 var textField=document.querySelector(".inputField");
 var textFieldLabel=document.querySelector(".textFieldName");
+var texBackField=document.querySelector(".textField");
 textFieldLabel.style.fontSize=20+"px";
-textFieldLabel.style.left=-260+"px";
-textFieldLabel.style.top=4+"px";
+textFieldLabel.style.left=-7+"vw";
+textFieldLabel.style.top=-3+"vw";
 var count=0;
 var textid;
 textField.onclick=function(){

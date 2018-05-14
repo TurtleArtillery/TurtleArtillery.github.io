@@ -4,7 +4,7 @@
 
 //Set these Values
 var size=32;
-var marginLeft=30;
+var marginLeft=5;
 var cRadius=10;
 var color1=[255,255,255];
 var color2=[0,255,139];
