@@ -7,11 +7,11 @@ backdrop.addEventListener("touchend",function(){this.style.backgroundColor="#000
 
 var button1=document.querySelector(".circleButton");
 button1.addEventListener("touchstart",function(){button1.toggleClass(".hover");});
-button1.addEventListener("touchend",function(){button1.removeClass(".hover")});
+button1.addEventListener("touchend",function(){button1.removeClass("circleButton")});
 
 var button2=document.querySelector(".circleButton2");
 button2.addEventListener("touchstart",function(){button2.toggleClass(".hover");});
-button2.addEventListener("touchend",function(){button2.removeClass(".hover");})
+button2.addEventListener("touchend",function(){button2.removeClass("circleButton2");})
 
 var button3=document.querySelector(".circleButton3");
 button3.addEventListener("click",function(){});
