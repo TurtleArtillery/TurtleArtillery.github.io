@@ -1,8 +1,14 @@
 
 //Main control of scipting elements for the index.html file
 
+var button1=document.querySelector(".circleButtonm");
+button1.addEventListener("click",function(){});
+
 var button2=document.querySelector(".circleButton2");
-button2.addEventListener("click",function(){});
+button2.addEventListener("click",function(){alert("HEEEEEY");});
+
+var button3=document.querySelector(".circleButton3");
+button3.addEventListener("click",function(){});
 
 var heading=document.querySelector("h1");
 var button=document.querySelector(".circleButton4");
