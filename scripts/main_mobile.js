@@ -7,7 +7,7 @@ backdrop.addEventListener("touchend",function(){this.style.backgroundColor="#000
 
 var button1=document.querySelector(".circleButton");
 button1.addEventListener("touchstart",function(){button1.toggleClass("hover");});
-button1.addEventListener("touchend",function(){button1.toggleClass("circleButton1")});
+button1.addEventListener("touchend",function(){button1.toggleClass("hover");});
 
 var button2=document.querySelector(".circleButton2");
 button2.addEventListener("click",function(){});
