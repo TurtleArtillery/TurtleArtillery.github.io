@@ -2,12 +2,12 @@
 //Main control of scipting elements for the index.html file
 
 var backdrop=document.querySelector("body");
-backdrop.addEventListener("touchstart",function(){this.style.backgroundColor="#00FF00";});
-backdrop.addEventListener("touchend",function(){this.style.backgroundColor="#000000";});
+/*backdrop.addEventListener("touchstart",function(){this.style.backgroundColor="#00FF00";});
+backdrop.addEventListener("touchend",function(){this.style.backgroundColor="#000000";});*/
 
 var button1=document.querySelector(".circleButton");
-button1.addEventListener("touchstart",function(){this.hover.call(this);});
-button1.addEventListener("touchend",function(){button1.toggleClass("hover")});
+button1.addEventListener("touchstart",function(){this.toggleClass("hover");});
+button1.addEventListener("touchend",function(){this.toggleClass("hover")});
 
 var button2=document.querySelector(".circleButton2");
 button2.addEventListener("click",function(){});
