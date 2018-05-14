@@ -2,7 +2,8 @@
 //Main control of scipting elements for the index.html file
 
 var backdrop=document.querySelector("body");
-backdrop.addEventListener("click",function(){this.style.backgroundColor="#00FF00";});
+backdrop.addEventListener("touchstart",function(){this.style.backgroundColor="#00FF00";});
+backdrop.addEventListener("touchend",function(){this.style.backgroundColor="#000000"};)
 
 var button1=document.querySelector(".circleButton");
 button1.addEventListener("click",function(){button1.style.backgroundColor="#FF0000";});
