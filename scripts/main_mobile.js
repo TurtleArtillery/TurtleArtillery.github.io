@@ -10,7 +10,8 @@ button1.addEventListener("touchstart",function(){button1.style.backgroundColor="
 button1.addEventListener("touchend",function(){button1.style.backgroundColor="#FFFFFF";});
 
 var button2=document.querySelector(".circleButton2");
-button2.addEventListener("click",function(){});
+button2.addEventListener("touchstart",function(){button2.style.backgroundColor="#00FF00";});
+button2.addEventListener("touchend",function(){button2.style.backgroundColor="#FFFFFF";});
 
 var button3=document.querySelector(".circleButton3");
 button3.addEventListener("click",function(){});
