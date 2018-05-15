@@ -129,9 +129,11 @@ function myMoveReverse() {
 var textField=document.querySelector(".inputField");
 var textFieldLabel=document.querySelector(".textFieldName");
 var texBackField=document.querySelector(".textField");
-textFieldLabel.style.fontSize=20+"px";
-textFieldLabel.style.left=-7+"vw";
-textFieldLabel.style.top=-3+"vw";
+var initFontSize=3;
+textFieldLabel.style.fontSize=initFontSize+"vw";
+textFieldLabel.style.left=-13+"vw";
+textFieldLabel.style.top=-4.75+"vw";
+textFieldLabel.style.marginBottom=0;
 var count=0;
 var textid;
 textField.onclick=function(){
@@ -140,15 +142,16 @@ textField.onclick=function(){
 };
 function textScale()
 {
-    if(parseFloat(textFieldLabel.style.fontSize)==11)
+    if(parseFloat(textFieldLabel.style.fontSize)<=(initFontSize*.5))
     {
         clearInterval(textid);
     }
     else
     {
-        textFieldLabel.style.fontSize=parseFloat(textFieldLabel.style.fontSize)-1+"px";
-        textFieldLabel.style.left=parseFloat(textFieldLabel.style.left)-1+"px";
-        textFieldLabel.style.top=parseFloat(textFieldLabel.style.top)-2.5+"px";
+        textFieldLabel.style.fontSize=parseFloat(textFieldLabel.style.fontSize)-.1+"vw";
+        textFieldLabel.style.left=parseFloat(textFieldLabel.style.left)-.4+"vw";
+        textFieldLabel.style.top=parseFloat(textFieldLabel.style.top)-.15+"vw";
+        textFieldLabel.style.marginBottom=parseFloat(textFieldLabel.style.marginBottom)+.1+"vw";
     }
 }
 
