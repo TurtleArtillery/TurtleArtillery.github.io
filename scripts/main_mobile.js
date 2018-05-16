@@ -18,12 +18,18 @@ button3.addEventListener("click",function(){button3.className="";button3.classNa
 button3.addEventListener("touchstart",function(){button3.toggleClass(".hover")});
 button3.addEventListener("touchend",function(){button3.className="";button3.className="circleButton3"});
 
+
 var heading=document.querySelector("h1");
+
 var button=document.querySelector(".circleButton4");
+var buttonStyle=window.getComputedStyle(button,null);
+var buttonX=button.getBoundingClientRect().left;
+var buttonY=button.getBoundingClientRect().top;
+
 var holder=document.querySelector(".sample1");
-var buttonCopy1;
-var buttonCopy2;
-var buttonCopy3;
+var buttonCopy1,bCopy1X,bCopy1Y;
+var buttonCopy2,bCopy2X,bCopy2Y;
+var buttonCopy3,bCopy3X,bCopy3Y;
 var switcher=false;
 
 
@@ -52,77 +58,90 @@ function addButtons()
     //add the button
     if(!buttonCopy1)
     {
-    buttonCopy1=document.createElement("h4");
-    buttonCopy1.className="circleButton4";
-    buttonCopy1.textContent="+";
+    buttonCopy1=document.createElement("img");
+    buttonCopy1.className="circleButton4addOn";
+    //buttonCopy1.textContent="+";
+    buttonCopy1.src="images/plus_blue.svg";
     buttonCopy1.style.zIndex="4";
     holder.appendChild(buttonCopy1);
-    buttonCopy2=document.createElement("h4");
-    buttonCopy2.className="circleButton4";
-    buttonCopy2.textContent="+";
+    buttonCopy2=document.createElement("img");
+    buttonCopy2.className="circleButton4addOn";
+    //buttonCopy2.textContent="+";
+    buttonCopy2.src="images/plus_blue.svg";
     buttonCopy2.style.zIndex="4";
     holder.appendChild(buttonCopy2);
-    buttonCopy3=document.createElement("h4");
-    buttonCopy3.className="circleButton4";
-    buttonCopy3.textContent="+";
+    buttonCopy3=document.createElement("img");
+    buttonCopy3.className="circleButton4addOn";
+    //buttonCopy3.textContent="+";
+    buttonCopy3.src="images/plus_blue.svg";
     buttonCopy3.style.zIndex="4";
     holder.appendChild(buttonCopy3);
+    //define initial positions
+    bCopy1X=buttonCopy1.getBoundingClientRect().left;
+    bCopy1Y=buttonCopy1.getBoundingClientRect().top;
+    bCopy2X=buttonCopy2.getBoundingClientRect().left;
+    bCopy2Y=buttonCopy2.getBoundingClientRect().top;
+    bCopy3X=buttonCopy3.getBoundingClientRect().left;
+    bCopy3Y=buttonCopy3.getBoundingClientRect().top;
     }
 
     //animate the buttons
-    buttonCopy1.style.right="78.25px";
-    buttonCopy1.style.bottom="0px";
-    buttonCopy2.style.right="152.25px";
-    buttonCopy3.style.right="226.25px";
-    buttonCopy3.style.bottom="0px";
+    buttonCopy1.style.left=35+"vw";
+    buttonCopy1.style.top=-22+"vw";
+    buttonCopy2.style.left=5+"vw";
+    buttonCopy2.style.top=-22+"vw";
+    buttonCopy3.style.left=-25+"vw";
+    buttonCopy3.style.top=-22+"vw";
     myMove();
 }
 
 function removeButtons()
 {
     myMoveReverse();
+    
 }
 
 function myMove() {
-    
-    var pos = parseFloat(buttonCopy1.style.bottom);
-    var pos2 = parseFloat(buttonCopy2.style.right);
-    var pos3 = parseFloat(buttonCopy3.style.bottom);
 
-    
-        
-        var id = setInterval(frame, 1);
-        function frame() {
-            if (parseFloat(buttonCopy1.style.bottom) >= 60) {
-                clearInterval(id);
-            } 
-            else {
-                pos+=2; 
-                buttonCopy1.style.bottom = pos + 'px';
-                buttonCopy2.style.right = pos2-pos + "px";
-                buttonCopy3.style.bottom = pos3-pos+"px";
-            }
+    buttonCopy1.style.display="inline-block";
+    buttonCopy2.style.display="inline-block";
+    buttonCopy3.style.display="inline-block";
+
+    var count=0;
+
+    var id = setInterval(frame, 1);
+    function frame() {
+        if (count==13) {
+            clearInterval(id);
+        } 
+        else {
+            buttonCopy1.style.top = parseFloat(buttonCopy1.style.top)-1.3+ 'vw';
+            buttonCopy2.style.left = parseFloat(buttonCopy2.style.left)+1.3+"vw";
+            buttonCopy3.style.top = parseFloat(buttonCopy3.style.top)+1.3+"vw";
+            count++;
         }
+    }
     
 }
 function myMoveReverse() {
-   
-        var inc=2;
-        var pos = parseFloat(buttonCopy1.style.bottom);
-        var pos2 = parseFloat(buttonCopy2.style.right);
-        var pos3 = parseFloat(buttonCopy3.style.bottom)
-        var id = setInterval(frame, 1);
-        function frame() {
-            if (
-                parseFloat(buttonCopy1.style.bottom) == 0) {
-                clearInterval(id);
-            } 
-            else {
-                buttonCopy1.style.bottom=parseFloat(buttonCopy1.style.bottom)-inc+"px";
-                buttonCopy2.style.right=parseFloat(buttonCopy2.style.right)+inc+"px";
-                buttonCopy3.style.bottom=parseFloat(buttonCopy3.style.bottom)+inc+"px";
-            }
+
+    var count=0;
+
+    var id = setInterval(frame, 1);
+    function frame() {
+        if (count==13) {
+            clearInterval(id);
+            buttonCopy1.style.display="none";
+            buttonCopy2.style.display="none";
+            buttonCopy3.style.display="none";
+        } 
+        else {
+        buttonCopy1.style.top = parseFloat(buttonCopy1.style.top)+1.3+ 'vw';
+        buttonCopy2.style.left = parseFloat(buttonCopy2.style.left)-1.3+"vw";
+        buttonCopy3.style.top = parseFloat(buttonCopy3.style.top)-1.3+"vw";
+        count++;
         }
+    }
    
 }
 
@@ -156,80 +175,3 @@ function textScale()
         textFieldLabel.style.marginBottom=parseFloat(textFieldLabel.style.marginBottom)+.1+"vw";
     }
 }
-
-/*
-//Checkbox Elements
-var chkbox=document.querySelector(".chkBox");
-chkbox.style.width="32px";
-chkbox.style.height="32px";
-chkbox.style.backgroundColor="rgb(255,255,255)";
-chkbox.style.left="0px";
-var endSwitch=false;
-var upSwitch=true;
-var chkid;
-var clicked=false;
-var count=0;
-var color1=[255,255,255];
-var color2=[0,255,139];
-var colorInterval=[color2[0]-color1[0],color2[1]-color1[1],color2[2]-color1[2]];
-var a;
-
-//heading.textContent=chkbox;
-chkbox.onclick=function(){
-    endSwitch=false;
-    upSwitch=true;
-    chkid=setInterval(chkPulse2,4);
-};
-function chkPulse2()
-{
-    
-    if(endSwitch)
-    {
-        if(clicked)
-        {
-            clicked=false;
-        }
-        else{
-            clicked=true;
-        }
-        count=-1;
-        clearInterval(chkid);
-    }
-    else if(upSwitch)
-    {
-        chkbox.style.width=parseFloat(chkbox.style.width)+1+"px";
-        chkbox.style.height=parseFloat(chkbox.style.height)+1+"px";
-        chkbox.style.left=parseFloat(chkbox.style.left)-.5+"px";
-        if(parseFloat(chkbox.style.width)==40)
-        {
-            upSwitch=false;
-        }
-    }
-    else{
-        chkbox.style.width=parseFloat(chkbox.style.width)-1+"px";
-        chkbox.style.height=parseFloat(chkbox.style.height)-1+"px";
-        chkbox.style.left=parseFloat(chkbox.style.left)+.5+"px";
-        if(parseFloat(chkbox.style.width)<33)
-        {
-            endSwitch=true;
-        }
-    }
-    //grade the color
-    if(!clicked)
-    {
-        
-        a="rgb("+Math.round(color1[0]+(colorInterval[0]*count/15))+","+
-        Math.round(color1[1]+(colorInterval[1]*count/15))+","+
-        Math.round(count*(colorInterval[2]/15)+color1[2])+")";
-        chkbox.style.backgroundColor=a;
-    }
-    else
-    {
-        a="rgb("+Math.round(color2[0]-(colorInterval[0]*count/15))+","+
-        Math.round(color2[1]-(colorInterval[1]*count/15))+","+
-        Math.round(color2[2]-(colorInterval[2]*count/15))+")";
-        chkbox.style.backgroundColor=a;
-    }
-    count++;
-}
-*/

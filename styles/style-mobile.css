@@ -158,6 +158,31 @@ body{
 .circleButton4:hover{
     /*transform: rotate(180deg);*/
 }
+.circleButton4addOn{
+    display: inline-block;
+    background-color: #FFFFFF;
+    line-height: 7.5vw;
+    /*letter-spacing: .5vw;*/
+    color: #00A8E1;
+    font-size: 10vw;
+    padding:2vw;
+    /*padding-top:2vw;
+    padding-bottom:2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;*/
+    border-radius:10vw;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 7vw;
+    margin-left: 20vw;
+    transition: .00s;
+    width:6vw;
+    height:6vw;
+    position:relative;
+    transform-origin: center;
+    z-index: 5;
+    /*margin-bottom:5vw;*/
+}
 
 .sample2Desc{
     /*margin-left: 50px;*/
@@ -243,10 +268,12 @@ body{
 
 h5{
     background-color: orange;
-    font-size: 5vw;
+    font-size: 4vw;
     display:inline-block;
-    position: relative;
+    position: absolute;
+    width:75vw;
     transform: rotate(30deg);
-    top:-130vw;
+    top:20vw;
+    left:13vw;
     box-shadow: 0 0 5vw #373737;
 }
