@@ -15,8 +15,10 @@ button2.addEventListener("touchend",function(){button2.removeClass("circleButton
 
 var button3=document.querySelector(".circleButton3");
 button3.addEventListener("click",function(){button3.className="";button3.className="circleButton3";});
-button3.addEventListener("touchstart",function(){button3.toggleClass(".hover")});
-button3.addEventListener("touchend",function(){button3.className="";button3.className="circleButton3"});
+button3.addEventListener("touchstart",function(){button3.toggleClass(".hover");
+backdrop.style.backgroundColor="#00FF00";});
+button3.addEventListener("touchend",function(){button3.className="";button3.className="circleButton3";
+backdrop.style.backgroundColor="#FF0000";});
 
 
 var heading=document.querySelector("h1");
@@ -109,7 +111,7 @@ function myMove() {
 
     var count=0;
 
-    var id = setInterval(frame, 1);
+    var id = setInterval(frame, 16);
     function frame() {
         if (count==13) {
             clearInterval(id);
@@ -127,7 +129,7 @@ function myMoveReverse() {
 
     var count=0;
 
-    var id = setInterval(frame, 1);
+    var id = setInterval(frame, 16);
     function frame() {
         if (count==13) {
             clearInterval(id);
@@ -151,6 +153,7 @@ var textField=document.querySelector(".inputField");
 var textFieldLabel=document.querySelector(".textFieldName");
 var texBackField=document.querySelector(".textField");
 var initFontSize=3;
+textField.textContent="test";
 textFieldLabel.style.fontSize=initFontSize+"vw";
 textFieldLabel.style.left=-13+"vw";
 textFieldLabel.style.top=-4.75+"vw";
