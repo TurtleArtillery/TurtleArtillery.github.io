@@ -5,6 +5,8 @@ var backdrop=document.querySelector("body");
 /*backdrop.addEventListener("touchstart",function(){this.style.backgroundColor="#00FF00";});
 backdrop.addEventListener("touchend",function(){this.style.backgroundColor="#000000";});*/
 
+var heading=document.querySelector("h1");
+
 var button1=document.querySelector(".circleButton");
 button1.addEventListener("touchstart",function(){button1.toggleClass(".hover");});
 button1.addEventListener("touchend",function(){button1.removeClass(".hover")});
@@ -15,13 +17,13 @@ button2.addEventListener("touchend",function(){button2.removeClass("circleButton
 
 var button3=document.querySelector(".circleButton3");
 button3.addEventListener("click",function(){button3.className="";button3.className="circleButton3";});
-button3.addEventListener("touchstart",function(){button3.toggleClass(".hover");
+button3.addEventListener("touchstart",function(){heading.accessKey.textContent=:"YEP";button3.toggleClass(".hover");
 backdrop.style.backgroundColor="#00FF00";});
 button3.addEventListener("touchend",function(){button3.className="";button3.className="circleButton3";
 backdrop.style.backgroundColor="#FF0000";});
 
 
-var heading=document.querySelector("h1");
+
 
 var button=document.querySelector(".circleButton4");
 var buttonStyle=window.getComputedStyle(button,null);
