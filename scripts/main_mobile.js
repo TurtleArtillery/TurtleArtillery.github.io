@@ -17,8 +17,8 @@ button2.addEventListener("touchend",function(){button2.removeClass("circleButton
 
 var button3=document.querySelector(".circleButton3");
 /*button3.addEventListener("click",function(){button3.className="";button3.className="circleButton3";});*/
-button3.addEventListener("touchstart",function(){Button3.style.width="60vw"});
-button3.addEventListener("touchend",function(){button3.className="";button3.className="circleButton3";
+button3.addEventListener("touchstart",function(){button3.style.width="60vw"});
+button3.addEventListener("touchend",function(){button3.style.width="6vw";
 backdrop.style.backgroundColor="#FF0000";});
 
 
