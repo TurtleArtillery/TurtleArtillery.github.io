@@ -8,12 +8,12 @@ backdrop.addEventListener("touchend",function(){this.style.backgroundColor="#000
 var heading=document.querySelector("h1");
 
 var button1=document.querySelector(".circleButton");
-button1.addEventListener("touchstart",function(){button1.toggleClass(".hover");});
-button1.addEventListener("touchend",function(){button1.removeClass(".hover")});
+button1.addEventListener("touchstart",function(){button1.style.boxShadow= "2px 2px 20px #333333";});
+button1.addEventListener("touchend",function(){button1.style.boxShadow= "0px 0px 0px #333333"});
 
 var button2=document.querySelector(".circleButton2");
-button2.addEventListener("touchstart",function(){button2.toggleClass(".hover");});
-button2.addEventListener("touchend",function(){button2.removeClass("circleButton2");})
+button2.addEventListener("touchstart",function(){button2.style.transform="rotate(180deg)";});
+button2.addEventListener("touchend",function(){button2.style.transform="rotate(0deg)";})
 
 var button3=document.querySelector(".circleButton3");
 /*button3.addEventListener("click",function(){button3.className="";button3.className="circleButton3";});*/
