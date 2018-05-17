@@ -16,9 +16,8 @@ button2.addEventListener("touchstart",function(){button2.toggleClass(".hover");}
 button2.addEventListener("touchend",function(){button2.removeClass("circleButton2");})
 
 var button3=document.querySelector(".circleButton3");
-//button3.addEventListener("click",function(){button3.className="";button3.className="circleButton3";});
-button3.addEventListener("touchstart",function(){heading.textContent="YEP";button3.toggleClass(".hover");
-backdrop.style.backgroundColor="#00FF00";});
+/*button3.addEventListener("click",function(){button3.className="";button3.className="circleButton3";});*/
+button3.addEventListener("touchstart",function(){Button3.style.width="60vw"});
 button3.addEventListener("touchend",function(){button3.className="";button3.className="circleButton3";
 backdrop.style.backgroundColor="#FF0000";});
 
