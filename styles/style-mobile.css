@@ -128,9 +128,9 @@ body{
     margin-bottom:5vw;
     z-index: 3;
 }
-/*.circleButton3:hover{
+.circleButton3:hover{
     width: 60vw;
-}*/
+}
 .circleButton4{
     display: inline-block;
     background-color: #FFFFFF;
